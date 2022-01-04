@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install modules
-        run: npm ci --production
+        run: npm ci 
       - name: Build
         run: npm run build
       - uses: actions/upload-artifact@v2
