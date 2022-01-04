@@ -18,6 +18,9 @@ jobs:
   artifact:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm ci
       - name: Build
         run: npm run build
       - uses: actions/upload-artifact@v2
